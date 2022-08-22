@@ -1,0 +1,103 @@
+body {
+    
+    font-family: "OpenSans", Arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    max-width: 1000px;
+    margin: 10px auto;
+    background: #eeeeee;
+    color: #363463;
+    font-size: 16px;
+    width:100%;
+    align-self: center;
+}
+
+header {
+    position: relative;
+    background-color: #00463f;
+    color: #CCC;
+    line-height: 1em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    min-height: 48px;
+}
+
+header .logo {
+    float: left;
+    margin: 4px;
+    display: block;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+#body-wrapper {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    min-height: 500px;
+    justify-content: center;
+    width:100%;
+    
+}
+
+.app-title {
+    display: block;
+    float: right;
+    color: #eeeeee;
+    font-size: 32px;
+    margin: 4px;
+    height: 100%;
+    padding-top: 12px;
+    padding-right: 5px;
+}
+
+.instructions {
+    margin-top: 20px;
+    margin-left: 20px;
+    align-self: center;
+    justify-content: center;
+    font-size: 22px; 
+    color: #228B22;
+}
+.instructions2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    align-self: center;
+    justify-content: center;
+    font-size: 15px; 
+    font-style: italic;
+    color: grey;
+}
+.predictButton {
+	margin-top: 12px;
+	width:100%;
+	justify-content: right;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #808080;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+	
+}
