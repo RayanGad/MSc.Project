@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "name": "Breast Cancer Prediction",
+  "description": "predict breast cancer",
+  "launch_path": "index.html",
+  "icons": {
+    "48": "/img/omrs-button.png"
+  },
+  "developer": {
+    "name": "RayanGad",
+    "url": "https://github.com/RayanGad/openmrs-owa-openmrs-owa-breastcancer-cdss.git"
+  },
+  "default_locale": "en",
+    "activities": {
+      "openmrs": {
+        "href": "*"
+      }
+    }
+}

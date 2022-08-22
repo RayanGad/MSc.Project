@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+  	<meta charset="utf-8"> 
+  
+  	<!-- Title -->
+    <title>Breast Cancer Predictor</title>
+    
+    <!-- openmrs favicon -->
+    <link rel="shortcut icon" type="image/ico" href="../../images/openmrs-favicon.ico"/>
+    <link rel="icon" type="image/png" href="../../images/openmrs-favicon.png"/>
+  
+  	<!--  CSS style sheets -->
+    <link rel="stylesheet" href="css/breastcancerpredictor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  	<!--  Java script--> 
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="js/mainController.js"></script>
+ 	<!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> --> 
+ 	
+ 	
+  	<script type="text/javascript">loadManifest();</script>
+  	
+  </head>
+  
+  <body class="container-fluid">
+  
+  	<!-- Display a message if JS has been disabled on the browser. -->
+    <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
+  
+ 	
+ 	<!--  Original OpenMRS header for consistency  -->
+    <header>
+      <div class="logo">
+          <a href="../../">
+              <img src="img/openmrs-with-title-small.png"/>
+          </a>
+      </div>
+      <span class="app-title">Breast Cancer Predictor</span>
+    </header>
+  
+     <!-- Main Content --> 
+       
+    <div class="clear"></div>
+    	<div id="body-wrapper">
+    	
+      		<div class="instructions">Search For Patient.</div>
+      		
+      		<div class="search">
+      		
+      			<input class=" form-control" type="search" id="search-input" name="q" placeholder="Enter Patient name">    
+      			<br><button class="buttonstyle" id="buttonsearch">Search</button>
+      			<p id="change">This table should show search results!</p>
+      			
+      		</div>
+      		
+      		<!-- Dynamic Search Table -->
+      		
+      		<div class="table table-hover">
+      			<table id="searchTable" class="table table-striped table-hover">
+      				<thead>
+      					<tr class='click-row' data-href="/Documents/files/file.pdf" >
+    							<th>Identifier</th>
+    							<th>Name</th>
+    							<th>Age </th>
+    							<th>Birthday</th>	
+    					</tr>
+      				</thead>	
+    				<tbody id="tableBody"></tbody>
+    	
+    			</table>      		
+      		</div>
+    	</div>
+  </body>
+</html>

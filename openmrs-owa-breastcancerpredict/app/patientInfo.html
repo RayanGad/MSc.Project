@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+  	<!-- Title -->
+    <title>Breast Cancer Predictor</title>
+    
+    <!-- openmrs favicon -->
+    <link rel="shortcut icon" type="image/ico" href="../../images/openmrs-favicon.ico"/>
+    <link rel="icon" type="image/png" href="../../images/openmrs-favicon.png"/>
+  
+  	<!--  CSS style sheets -->
+    <link rel="stylesheet" href="css/breastcancerpredictor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  	<!--  Java script--> 
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	 
+ 	<script src="js/patientInfoController.js"></script>
+ 	<!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>  -->
+ 	
+  	<script type="text/javascript">loadManifest();</script>
+  	
+  </head>
+  
+  <body class="container-fluid">
+  
+  	<!-- Display a message if JS has been disabled on the browser. -->
+    <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
+  
+ 	<!--  Original OpenMRS header for consistency  -->
+    <header>
+      <div class="logo">
+          <a href="../">
+              <img src="img/openmrs-with-title-small.png"/>
+          </a>
+      </div>
+      <span class="app-title">Breast Cancer Predictor</span>
+    </header>
+     
+     <!-- Main Content --> 
+    
+    <div id="body-wrapper">
+    		
+    	<div class="row">
+    		<div class="col-sm-3">
+    			<p class="name" id ="name"></p>	
+    			<p class="info">Patient name</p>
+    		</div>
+    			
+    		<div class="col-sm-3">
+    			<p class="info2" id ="info2" style="font-size:12px"></p>		
+    		</div>
+    		
+    		<div class="col-sm-3">			
+    		</div>
+    		
+    		<div class="col-sm-3">
+    			<p class="uuid" id ="uuid" style="font-size:12px">l</p>		
+    		</div>
+    		<hr>
+    	</div>	
+    		
+    		
+    	<div class="py-5">
+    		<div class="row">
+
+      		<div class="col-lg-6 mb-5">
+        	<!-- Collapse Panel 1-->
+        		<a data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="true" aria-controls="collapseExample1" class="btn btn-primary btn-block py-2 shadow-sm with-chevron">
+        			<p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2"><strong class="text-uppercase">Allergens</strong><i class="fa fa-angle-down"></i></p>
+        		</a>
+        		<div id="collapseExample1" class="collapse shadow-sm show">
+          			<div class="card">
+            			<div class="card-body">
+              				<p class="font-italic mb-0 text-muted" ><li id="allergy">Allergy:</li><li id="allergyType">Allergen type:.</li><li id="allergySeverity">Severity:</li><li id="allergyReact">Reaction:</li></p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+
+      		<div class="col-lg-6 mb-5">
+        	<!-- Collapse Panel 2-->
+        		<button data-bs-toggle="collapse" data-bs-target="#collapseExample2" type="button" aria-expanded="true" aria-controls="collapseExample2" class="btn btn-success btn-block py-2 shadow-sm with-chevron">
+          			<p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2"><strong class="text-uppercase">Latest Observations</strong><i class="fa fa-angle-down"></i></p>
+        		</button>
+        		<div id="collapseExample2" class="collapse shadow-sm show">
+          			<div class="card">
+            			<div class="card-body">
+              				<p class="font-italic mb-0 text-muted">List of latest observations<li>Observation 1</li><li>Observation 2</li><li>Observation 3</li></p>
+           				</div>
+          			</div>
+        		</div>
+      		</div>
+
+      		<div class="col-lg-6 mb-5">
+        	<!-- Collapse Panel 3-->
+        		<a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="true" aria-controls="collapseExample3" class="btn btn-warning btn-block p2-3 shadow-sm with-chevron">
+          			<p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2"><strong class="text-uppercase">Diagnosis</strong><i class="fa fa-angle-down"></i></p>
+        		</a>
+        		<div id="collapseExample3" class="collapse shadow-sm show">
+          			<div class="card">
+            			<div class="card-body">
+              				<p class="font-italic mb-0 text-muted">List of recent diagnosis<li>Diagnosis 1</li><li>Diagnosis 2</li><li>Diagnosis 3</li></p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+
+      		<div class="col-lg-6 mb-5">
+        	<!-- Collapse Panel 4-->
+        		<a data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="true" aria-controls="collapseExample4" class="btn btn-danger btn-block p2-3 shadow-sm with-chevron">
+          			<p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2"><strong class="text-uppercase">Vitals</strong><i class="fa fa-angle-down"></i></p>
+        		</a>
+        		<div id="collapseExample4" class="collapse shadow-sm show">
+         			 <div class="card">
+           				 <div class="card-body">
+             				 <p class="font-italic mb-0 text-muted">List patient vitals<li>Vitals 1</li><li>Vitals 2</li><li>Vitals 3</li></p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+
+    		</div>
+  		</div>
+  	  	
+  	  	<!-- Prediction button opens the prediction page -->	 
+    	<input id="predictButton" class="btn btn-outline-secondary" type="button" onclick="location.href='http://127.0.0.1:5000/';" value="Generate Prediction" />
+    		  		
+    	</div>
+    	
+    	<!-- Testing data transfer -->
+    	<script>
+    		var patientName = sessionStorage.getItem("name");
+			console.log(patientName);
+    	</script>
+    	
+  </body>
+</html>

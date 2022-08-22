@@ -1,0 +1,240 @@
+/* * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at http://mozilla.org/MPL/2.0/. OpenMRS is also distributed under
+ * the terms of the Healthcare Disclaimer located at http://openmrs.org/license.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+ 
+ /* General styles */
+body {
+    font-family: "OpenSans", Arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    max-width: 1000px;
+    margin: 10px auto;
+    background: #eeeeee;
+    color: #363463;
+    font-size: 16px;
+    width:100%;
+    align-self: center;
+}
+
+header {
+    position: relative;
+    background-color: #00463f;
+    color: #CCC;
+    line-height: 1em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    min-height: 48px;
+}
+
+header .logo {
+    float: left;
+    margin: 4px;
+    display: block;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+#body-wrapper {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    min-height: 500px;
+    justify-content: center;
+    width:100%;
+}
+
+.app-title {
+    display: block;
+    float: right;
+    color: #eeeeee;
+    font-size: 32px;
+    margin: 4px;
+    height: 100%;
+    padding-top: 12px;
+    padding-right: 5px;
+}
+
+.instructions {
+    align-self: center;
+    justify-content: center;
+    font-size: 22px; 
+    color: #009587;
+}
+
+
+/* For screen 1 */
+
+.buttonstyle {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	width:100%;
+	justify-content: right;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.buttonstyle:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.buttonstyle:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+#change{
+	display:none;
+	color: #CCC;
+}
+#search-input{
+	width:100%
+}
+.body-wrapper{
+	width:100%
+	
+}
+#searchTable{
+	width:100%;
+	border-collapse: collapse;
+	
+}
+.predictButton {
+	margin-top: 12px;
+	width:100%;
+	justify-content: right;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #808080;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+	
+}
+#predictButton {
+	margin-top: 0px;
+	width:100%;
+	justify-content: right;
+
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+   
+	
+}
+table, td, th {
+  border: 1px solid;
+}
+.table{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-collapse: collapse;
+	overflow: hidden;
+	font-weight: bold;
+}
+.table thead th{
+	
+	background: #009587;
+	color: #ffffff;
+	
+}
+.table td,
+.table th{
+	padding: 10px 20px;
+}
+
+.table tbody tr:nth-of-type(even){
+	background: #eeeeee;
+}
+
+.table tbody tr:last-of-type{
+	border-bottom: 2px solid #009578;
+}
+
+/* For screen 2 */
+
+.info, .uuid{
+    font-size: 10px; 
+    color: #808080;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 0%;
+	padding-top:0%;
+	
+}
+.name{
+	text-decoration-line: underline;
+	color:#00463f;
+	margin-bottom:2px;
+}
+.info2{
+	color:#00463f;
+	margin-bottom:2px;
+}
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.with-chevron[aria-expanded='true'] i {
+  display: block;
+  transform: rotate(180deg) !important;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #8064A2 !important;
+}
+
+/*
